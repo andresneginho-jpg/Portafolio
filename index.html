@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Diseñador Gráfico</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Passion+One:wght@400;700;900&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <!-- Banner Section -->
+        <section class="banner">
+            <div class="banner-content">
+                <div class="logo-container">
+                    <img src="Logo-CV.png" alt="Logo" class="floating-logo">
+                </div>
+                <div class="info-box">
+                    <h1>Diseñador<br>Gráfico</h1>
+                    <p>EDICIÓN DE VIDEO, MOTION GRAPHICS,<br>COMUNICACIÓN CORPORATIVA</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Section -->
+        <section class="portfolio-nav">
+            <h2 class="section-title">Portafolio</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-filter="visuales">Visuales</button>
+                <button class="filter-btn" data-filter="video">Video/Motion</button>
+                <button class="filter-btn" data-filter="logopedia">Logopedia</button>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-container">
+            <!-- Visuales Gallery -->
+            <div class="gallery grid-layout active" id="gallery-visuales">
+                <div class="gallery-item"><img src="V-1.jpg" alt="Visual 1"></div>
+                <div class="gallery-item"><img src="V-2.jpg" alt="Visual 2"></div>
+                <div class="gallery-item"><img src="V-3.jpg" alt="Visual 3"></div>
+                <div class="gallery-item"><img src="V-4.jpg" alt="Visual 4"></div>
+                <div class="gallery-item"><img src="V-5.jpg" alt="Visual 5"></div>
+                <div class="gallery-item"><img src="V-6.jpg" alt="Visual 6"></div>
+                <div class="gallery-item"><img src="V-7.jpg" alt="Visual 7"></div>
+                <div class="gallery-item"><img src="V-8.jpg" alt="Visual 8"></div>
+                <div class="gallery-item"><img src="V-9.jpg" alt="Visual 9"></div>
+            </div>
+
+            <!-- Video/Motion Gallery -->
+            <div class="gallery grid-layout" id="gallery-video">
+                <div class="gallery-item"><video src="Intro-Podcast.mp4"></video></div>
+                <div class="gallery-item"><video src="Video-Liebres.mp4"></video></div>
+                <div class="gallery-item"><video src="Videos.mp4"></video></div>
+            </div>
+
+            <!-- Logopedia Gallery -->
+            <div class="gallery grid-layout" id="gallery-logopedia">
+                <div class="gallery-item item-large" data-carousel="Logo-BE-1.jpg,Logo-BE-2.jpg"><img src="Be.jpg" alt="Be Logo"></div>
+                <div class="gallery-item item-wide" data-carousel="Logo-DB-1.jpg,Logo-DB-2.jpg"><img src="DB.jpg" alt="DB Logo"></div>
+                <div class="gallery-item item-square" data-carousel="EMBERA_Brochure_1.jpg,EMBERA_Brochure_2.jpg"><img src="Embera.jpg" alt="Embera Logo"></div>
+                <div class="gallery-item item-tall" data-carousel="FFC-1.jpg,FFC-2.jpg,FFC-3.jpg"><img src="FFC.jpg" alt="FFC Logo"></div>
+                <div class="gallery-item item-square" data-carousel="Logo-MTG-1.jpg,Logo-MTG-2.jpg,Logo-MTG-3.jpg"><img src="MTG.jpg" alt="MTG Logo"></div>
+                <div class="gallery-item" data-carousel="ORTICS-1.jpg,ORTICS-2.jpg"><img src="ORTICS.jpg" alt="ORTICS Logo"></div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox">
+            <button id="lightbox-prev" class="lightbox-nav" style="display: none;">&#10094;</button>
+            <div class="lightbox-content">
+                <img id="lightbox-img" src="" alt="Vista ampliada" style="display: none;">
+                <video id="lightbox-video" src="" controls style="display: none;"></video>
+                <button id="lightbox-close">Cerrar</button>
+            </div>
+            <button id="lightbox-next" class="lightbox-nav" style="display: none;">&#10095;</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
